@@ -10,7 +10,7 @@ def vw_home(request):
     return render(request,"about.html",{"vahedha":vahedha,"frm_vahed":frm_vahed()})
 	
 	#return HttpResponse("ok")
-def login(request):
+def vw_login(request):
     return render(request,"login.html",)
     
 

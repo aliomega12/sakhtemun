@@ -15,13 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from appvahed.views import login
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url("^$","appvahed.views.vw_home"),
     url(r'^vahed/sabt/$', "appvahed.views.vw_sabtvahed"),
-     url(r'^login/$', login ,name="login")
+  url(r'^login/$', login ,name="login")
 
 	
 ]
